@@ -6,7 +6,7 @@ export default class AdvController {
   @Get("/advs")
   async allAdvs() {
     const advs = await Adv.find();
-    return { advs };
+    return advs;
   }
 
   @Post("/advs")
